@@ -1,6 +1,6 @@
 var v = document.getElementById('main');
 async function api(){
-    const url = "https://newsapi.org/v2/top-headlines?country=in&category=business";
+    const url = "https://newsapi.org/v2/top-headlines?country=in";
     const options = {
         method: 'GET',
         headers: {
@@ -11,7 +11,7 @@ async function api(){
     var img;
     var main;
     setTimeout(()=>{
-    for( i=0; i< data.totalResults; i++){
+    for( i=0; i<5; i++){
       if(data.articles[i].urlToImage == null){
         img = "https://thumbs.dreamstime.com/z/good-news-newspaper-headline-25776802.jpg?w=992";
 
@@ -50,7 +50,7 @@ async function api(){
         </div>
       </div>`;
     }
-},5000);
+},1000);
 
 }
 
