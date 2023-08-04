@@ -39,12 +39,12 @@ async function api(){
         <div class="mb-6 mr-auto w-full shrink-0 grow-0 basis-auto px-3 md:mb-0 md:w-9/12 xl:w-7/12">
         <a href="${data.value[i].url}"> <h5 class="mb-3 text-lg font-bold">${data.value[i].name}</h5>
         </a>
-          <p class="mb-6 text-neutral-500 dark:text-neutral-300">
+          <p class="mb-6 text-neutral-900">
             <small>Published <u>${data.value[i].provider[0].name}</u> 
               
           </p>
           <a href="${data.value[i].url}">
-          <p class="text-neutral-500 dark:text-neutral-300">
+          <p class="text-neutral-900 ">
             ${data.value[i].description}
           </p></a>
         </div>
