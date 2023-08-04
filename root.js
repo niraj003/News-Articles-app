@@ -1,16 +1,16 @@
 var v = document.getElementById('main');
 async function api(){
-    const url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=94ce9b3127454996b03a5128c63ec703";
+    const url = "https://newsapi.org/v2/top-headlines?country=in";
     const options = {
-        method: 'GET',
+        method: 'POST',
         headers: {
-            'X-Api-Key': ' 94ce9b3127454996b03a5128c63ec703',
-            'Authorization': '94ce9b3127454996b03a5128c63ec703'
+            'X-Api-Key': ' 94ce9b3127454996b03a5128c63ec703'
         }}
     const result = await fetch(url, options);
     const data = await result.json();
     var img;
     var main;
+    setTimeout(()=>{
     for( i=0; i< data.totalResults; i++){
       if(data.articles[i].urlToImage == null){
         img = "https://thumbs.dreamstime.com/z/good-news-newspaper-headline-25776802.jpg?w=992";
@@ -50,6 +50,7 @@ async function api(){
         </div>
       </div>`;
     }
+},2000);
 
 }
 
