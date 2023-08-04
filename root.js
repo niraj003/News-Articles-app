@@ -1,8 +1,8 @@
 var v = document.getElementById('main');
 async function api(){
-    const url = "https://newsapi.org/v2/top-headlines?country=in";
+    const url = "https://newsapi.org/v2/top-headlines?country=in&category=business";
     const options = {
-        method: 'POST',
+        method: 'GET',
         headers: {
             'X-Api-Key': ' 94ce9b3127454996b03a5128c63ec703'
         }}
