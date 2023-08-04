@@ -1,4 +1,5 @@
 var v = document.getElementById('main');
+
 async function api(){
 
     const url = 'https://bing-news-search1.p.rapidapi.com/news?count=20&cc=in&originalImg=true&textDecorations=true&safeSearch=Off&textFormat=Raw';
@@ -14,7 +15,7 @@ async function api(){
     
         const response = await fetch(url, options);
         const data = await response.json();
-        console.log(data);
+        v.innerHTML = `<h2 class="mb-12 text-center text-3xl font-bold">Newz Articles</h2>`
        
    
    for(i=0; i<12; i++){ 
