@@ -50,7 +50,7 @@ async function api(){
         </div>
       </div>`;
     }
-},2000);
+},5000);
 
 }
 
